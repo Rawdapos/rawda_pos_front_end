@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Acme Dashboard
 
-## Getting Started
+Bienvenue dans le projet Acme Dashboard. Ce projet est un exemple pour le [cours Next.js Learn](https://nextjs.org/learn/), proposé par Vercel.
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Acme Dashboard est une application de tableau de bord construite avec Next.js et Tailwind CSS. Elle permet de gérer les clients et les factures.
+
+## Installation
+
+Pour installer les dépendances du projet, exécutez la commande suivante :
+
+```sh
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Utilisation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Développement
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Pour démarrer le serveur de développement, exécutez :
 
-## Learn More
+```sh 
+npm run dev 
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pour construire le projet pour la production, exécutez :
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```sh
+npm run build
+```
 
-## Deploy on Vercel
+Pour démarrer le serveur en mode production, exécutez :
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+npm run start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Structure du projet
+
+Le projet est organisé comme suit :
+
+## Scripts
+
+Voici les scripts disponibles dans ce projet :
+
+- build: Compile le projet avec Next.js.
+- dev: Démarre le serveur de développement.
+- lint: Lint le code source.
+- prettier: Formate le code source avec Prettier.
+- prettier:check: Vérifie le formatage du code source avec Prettier.
+- start: Démarre le serveur de production.
+- test: Lance les tests end-to-end avec Playwright.
+
+Pour exécuter un script, utilisez la commande suivante :
+
+```sh 
+npm run <script>
+```
+
+Par exemple, pour démarrer le serveur de développement :
+
+```sh
+npm run dev
+```
+
+## Configuration
+
+### Playwright
+
+Le fichier de configuration Playwright se trouve dans playwright.config.ts. Il configure le serveur web pour les tests end-to-end.
+
+### TypeScript
+
+Le fichier de configuration TypeScript se trouve dans tsconfig.json. Il définit les options du compilateur TypeScript.
+
+### Tailwind CSS
+
+Le fichier de configuration Tailwind CSS se trouve dans tailwind.config.ts.
+
+### Next.js
+
+Le fichier de configuration Next.js se trouve dans next.config.mjs.
+
+## Tests
+
+Pour exécuter les tests, utilisez la commande suivante :
+
+```sh
+npm run test
+```
+
+## Contribuer
+
+Les contributions sont les bienvenues ! Veuillez suivre les étapes suivantes pour contribuer :
+
+1. Forkez le dépôt.
+2. Créez une branche pour votre fonctionnalité (git checkout -b feature/ma-fonctionnalité).
+3. Commitez vos modifications (git commit -m 'Ajoute ma fonctionnalité').
+4. Poussez votre branche (git push origin feature/ma-fonctionnalité).
+5. Ouvrez une Pull Request.
+
+## Licence
+
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
